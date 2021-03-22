@@ -1,0 +1,69 @@
+@import "./variables";
+
+.tool-bar {
+  max-height: $tool-bar_height;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 4px 5px gray;
+  z-index: 1;
+
+  &__btn {
+    height: 25px;
+    width: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  .brush {
+    background: url("https://raw.githubusercontent.com/utimur/Fullstack-websocket-paint/master/client/src/assets/img/brush.png") no-repeat center;
+  }
+
+  .circle {
+    background: url("https://raw.githubusercontent.com/utimur/Fullstack-websocket-paint/master/client/src/assets/img/circle.png") no-repeat center;
+  }
+
+  .eraser {
+    background: url("https://raw.githubusercontent.com/utimur/Fullstack-websocket-paint/master/client/src/assets/img/eraser.png") no-repeat center;
+  }
+
+  .line {
+    background: url("https://raw.githubusercontent.com/utimur/Fullstack-websocket-paint/master/client/src/assets/img/line.png") no-repeat center;
+  }
+
+  .rect {
+    background: url("https://raw.githubusercontent.com/utimur/Fullstack-websocket-paint/master/client/src/assets/img/rect.png") no-repeat center;
+  }
+
+  .redo {
+    background: url("https://raw.githubusercontent.com/utimur/Fullstack-websocket-paint/master/client/src/assets/img/redo.png") no-repeat center;
+  }
+
+  .save {
+    background: url("https://raw.githubusercontent.com/utimur/Fullstack-websocket-paint/master/client/src/assets/img/save.png") no-repeat center;
+    margin-right: 10px;
+  }
+
+  .undo {
+    background: url("https://raw.githubusercontent.com/utimur/Fullstack-websocket-paint/master/client/src/assets/img/undo.png") no-repeat center;
+    margin-left: auto;
+  }
+
+}
+
+.setting-bar {
+  max-height: $tool-bar_height;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  box-shadow: 0 4px 5px gray;
+  top: $tool-bar_height;
+}
